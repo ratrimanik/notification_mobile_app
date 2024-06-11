@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:pd_app/ui/screen/intro_screen.dart';
 import 'package:pd_app/ui/theme/theme.dart';
-import 'package:pd_app/ui/widgets/mainwrapper.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => const MainWrapper(),
+          builder: (_) => const IntroScreen(),
         ),
       );
     });
